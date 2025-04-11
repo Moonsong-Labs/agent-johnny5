@@ -133,7 +133,7 @@ async def get_tools_async():
     
     # Use a more permissive NODE_OPTIONS that includes fetch polyfill
     env_vars = {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": GITHUB_TOKEN,
+        "GITHUB_TOKEN": GITHUB_TOKEN,
         "GOOGLE_API_KEY": GOOGLE_API_KEY,
         "NODE_OPTIONS": "--no-warnings --experimental-fetch",
         "DEBUG": "mcp:*"  # Enable MCP debug logging
@@ -278,6 +278,7 @@ async def initialize_web_agent_async():
         print("Initializing GitHub MCP tools for web mode...")
         _tools, _exit_stack = await get_tools_async()
         print(f"✅ Successfully initialized {len(_tools)} GitHub MCP tools for web mode.")
+        print(f"✅ Supported tools: {_tools}.")
         
         # Update the root_agent with the tools
         if _tools:
