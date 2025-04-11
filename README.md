@@ -15,7 +15,7 @@
 
 -   **Main Agent (Orchestrator)**: Acts as the central coordinator, receives prompts and routes them to the appropriate specialized agent
 -   **Specialized Agents**: Each agent has a specific purpose and expertise:
-    -   **PullSage**: Provides wisdom about pull requests (currently just returns a greeting)
+    -   **PullSage**: Provides wisdom about pull requests
     -   More agents to be added...
 
 ## Getting Started
