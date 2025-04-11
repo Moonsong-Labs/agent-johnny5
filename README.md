@@ -1,12 +1,13 @@
 # <div align="center">Agent Johnny5</div>
 
+<pre>
 <div align="center">
     🚧 UNDER CONSTRUCTION 🚧  
 </div>
-
 <div align="center">
     A minimalistic multi-agent system to analyze GitHub repositories using Google ADK and GitHub MCP.
 </div>
+</pre>
 
 
 
