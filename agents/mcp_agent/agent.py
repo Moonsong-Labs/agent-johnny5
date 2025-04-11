@@ -27,7 +27,7 @@ github_tools = []
 def validate_and_setup_token():
     """Validates the GitHub token and prompts for a new one if needed."""
     # Try to get the token from the environment variable first
-    env_token = os.getenv('GITHUB_PERSONAL_ACCESS_TOKEN')
+    env_token = os.getenv('GITHUB_TOKEN')
     print(f"Debug: GitHub token from environment: {'Present' if env_token else 'Missing'}")
 
     # Use the provided token as a fallback
@@ -147,7 +147,7 @@ async def get_tools_async():
     
     print("Debug: Attempting to connect with environment variables:")
     for key, value in env_vars.items():
-        if key == "GITHUB_PERSONAL_ACCESS_TOKEN":
+        if key == "GITHUB_TOKEN":
             print(f"  {key}: {value[:4]}...{value[-4:]}")
         elif key == "GOOGLE_API_KEY":
             print(f"  {key}: [REDACTED]")
