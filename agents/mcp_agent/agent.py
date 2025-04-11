@@ -222,7 +222,7 @@ class LazyLoadingLlmAgent(LlmAgent):
 
 # Create the agent with initially empty tools using our LazyLoadingLlmAgent
 root_agent = LazyLoadingLlmAgent(
-    model='gemini-2.0-flash-exp',
+    model='gemini-2.5-pro-exp-03-25',
     name='GitHubAssistant',
     description="An assistant that can help with GitHub repository management and operations.",
     instruction="""
