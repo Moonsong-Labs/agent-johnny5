@@ -15,8 +15,13 @@
 
 -   **Main Agent (Orchestrator)**: Acts as the central coordinator, receives prompts and routes them to the appropriate specialized agent
 -   **Specialized Agents**: Each agent has a specific purpose and expertise:
-    -   **PullSage**: Provides wisdom about pull requests
-    -   More agents to be added...
+<pre>
+    • 🕵️‍♂️ GitMiner: Digs through git history, extracts diffs, authorship, commit trends
+    • 🧠 PullSage: Ingests and summarizes PRs, links them to code and commits
+    • 🧬 CodeWeaver: Parses code structure, builds symbols/indexes (maybe with tree-sitter or LSPs)
+    • 🤖 MainAgent: Accepts queries, routes to other agents, builds expert-level answers
+    • 🧰 Indexer: Manages embeddings and search (e.g. with FAISS, Weaviate, etc.)
+</pre>
 
 ## Getting Started
 
