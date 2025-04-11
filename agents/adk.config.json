@@ -1,0 +1,41 @@
+{
+    "name": "agent-johnny5",
+    "description": "A minimalistic multi-agent system",
+    "version": "0.1.0",
+    "entry_module": "agent",
+    "api": {
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "prompt": {
+                    "type": "string",
+                    "description": "User prompt or query"
+                },
+                "agent": {
+                    "type": "string",
+                    "description": "Specific agent to call",
+                    "default": "pullsage"
+                }
+            },
+            "required": ["prompt"]
+        },
+        "output_schema": {
+            "type": "object",
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": ["success", "error"]
+                },
+                "agent": {
+                    "type": "string"
+                },
+                "result": {
+                    "type": "object"
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
