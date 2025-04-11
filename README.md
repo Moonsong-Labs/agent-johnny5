@@ -1,6 +1,8 @@
-# Agent Johnny5
+# <div align="center">Agent Johnny5</div>
 
-A minimalistic multi-agent system where specialized agents perform specific tasks and are orchestrated by a main agent.
+<div align="center">🚧 UNDER CONSTRUCTION 🚧 </div>
+
+A minimalistic multi-agent system to analyze GitHub repositories using Google ADK and GitHub MCP.
 
 ## System Architecture
 
